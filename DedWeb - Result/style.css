@@ -1,0 +1,198 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(20, 20, 20);
+}
+
+@font-face {
+    font-family: HackMe;
+    src: url(Hacked-KerX.ttf);
+}
+
+body {
+    background-image: url("images/back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: HackMe, cursive;
+    color: white;
+}
+
+*::-webkit-scrollbar-track {
+	background-color: black;
+  position: absolute;
+}
+
+*::-webkit-scrollbar {
+	width: 8px;
+	background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  position: absolute;
+	background-color: rgb(186, 186, 186);
+}
+
+nav {
+    /* margin-top: 200px; */
+    width: 100%;
+    height: 55px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    border-bottom: 4px solid rgb(255, 255, 255);
+    box-shadow: 5px 10px 20px rgb(130, 130, 130);
+    z-index: 200;
+}
+
+nav>img {
+    width: 170px;
+    height: 170px;
+    /* margin-left: 800px; */
+    animation: rotateAnimation 4s linear infinite;
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(55, 55, 55));
+    filter: drop-shadow(5px 5px 5px rgb(55, 55, 55));
+}
+
+@keyframes rotateAnimation {
+	0% {transform: rotate3D(0, 1, 0, -30deg);}
+	80% {transform: rotate3d(0, 1, 0, 130deg);}
+  100% {transform: rotate3d(0, 1, 0, 329deg);}
+}
+
+.custshadow {
+    box-shadow: 5px 5px 20px rgb(92, 92, 92);
+}
+
+#Gallery {
+    width: 100%;
+    padding-top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Gallery>h1 {
+    font-size: 66px;
+}
+
+#main {
+    padding: 80px 100px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    border-top: 4px solid rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 20px rgb(130, 130, 130);
+}
+
+#main>img {
+    width: 100%;
+}
+
+footer {
+    margin-top: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    padding-top: 100px;
+    border-top: 4px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 20px rgb(130, 130, 130);
+    flex-direction: column;
+    background-color: rgb(20, 20, 20);
+}
+
+#DedSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+    width: 100%;
+}
+
+.Alpha {
+    font-family: HackMe, cursive;
+    width: 140px;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    border: 3px solid white;
+    transition-duration: 200ms;
+}
+
+.Alpha:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 200ms;
+}
+
+footer>h2 {
+  margin-top: 100px;
+  font-size: 30px;
+  font-family: HackMe;
+}
+
+#social {
+    display: flex;
+    padding: 20px;
+    padding-top: 5px;
+}
+
+a {
+    display: flex;
+    background: black;
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 3px solid white;
+    transition: transform 0.5s;
+  }
+
+  a i {
+    font-size: 20px;
+    color: white;
+    transition: transform 0.5s;
+  }
+
+  a:hover {
+    background-color: white;
+    transform: translateY(-10px);
+    transition: transform 0.5s;
+  }
+
+  a:hover i {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+  }
+
+  a:hover .fa-facebook {
+    color: #3b5998;
+  }
+
+  a:hover .fa-linkedin {
+    color: #70B5F9;
+  }
+
+  a:hover .fa-twitter {
+    color: #00acee;
+  }
+
+  a:hover .fa-whatsapp {
+    color: #4fce5d;
+  }
+
+  a:hover .fa-instagram {
+    color: #f14843;
+  }
+
+  a:hover .fa-youtube {
+    color: #f00;
+  }
